@@ -21,3 +21,29 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+
+.poppins-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 72px;
+  line-height: 108px;
+
+}
+
+.poppins-year{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.button{
+  width: 193px;
+  height: 41px;
+  top: 698px;
+  left: 784px;
+  border-radius: 8px;
+  background: #ff5055;
+}
