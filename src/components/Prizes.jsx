@@ -4,14 +4,14 @@ import Heading from "./Heading";
 
 const Prizes = () => {
   return (
-    <div className="py-24 border-y border-white">
+    <section className="py-24 border-y border-white" id="prizes">
       <Heading text="Prizes" />
       <div className="mx-auto w-3/5 flex mt-24 gap-24">
         <Card text="INR 2K+" />
         <Card text="INR 5K+" />
         <Card text="INR 10K+" />
       </div>
-    </div>
+    </section>
   );
 };
 

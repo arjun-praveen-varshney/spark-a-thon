@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Domains = () => {
   return (
-    <div className="py-24 border-y border-white">
+    <section className="py-24 border-y border-white" id="domains">
       <Heading text="Domains" />
       <div className="mx-auto w-2/3 flex mt-24 gap-20">
         <Card text="AI-ML" bgColor="bg-[#FF5055]" />
@@ -12,7 +12,7 @@ const Domains = () => {
         <Card text="ROBOTICS" bgColor="bg-[#C80774]" />
         <Card text="SMART SYSTEM" />
       </div>
-    </div>
+    </section>
   );
 };
 
