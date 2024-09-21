@@ -1,12 +1,16 @@
 import React from "react";
+import Card from "./Card";
+import Heading from "./Heading";
 
 const Prizes = () => {
   return (
-    <div>
-      <div className="w-4/5 mx-auto bg-secondary py-1 text-[#FAF3DD] font-bold text-[36px] leading-[54px] tracking-[10%] text-center">
-        PRIZES
+    <div className="py-24 border-y border-white">
+      <Heading text="Prizes" />
+      <div className="mx-auto w-3/5 flex mt-24 gap-24">
+        <Card text="INR 2K+" />
+        <Card text="INR 5K+" />
+        <Card text="INR 10K+" />
       </div>
-      <div className=""></div>
     </div>
   );
 };

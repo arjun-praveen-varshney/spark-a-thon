@@ -9,7 +9,10 @@ const Navbar = () => {
       <img src={logo} alt="logo" />
       <ul className="flex items-center gap-20">
         {list.map((item, index) => (
-          <li key={index} className="text-white poppins-semibold">
+          <li
+            key={index}
+            className="text-white poppins-semibold cursor-pointer"
+          >
             {item}
           </li>
         ))}
