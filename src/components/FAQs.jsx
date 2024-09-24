@@ -1,4 +1,4 @@
-import Accordion from "./accordion";
+import Accordion from "./Accordion";
 import Heading from "./Heading";
 
 const FAQs = () => {
