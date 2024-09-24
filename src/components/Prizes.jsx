@@ -1,5 +1,7 @@
 import React from "react";
 import Heading from "./Heading";
+import prizesLeft from "../assets/prizesLeft.png";
+import prizesRight from "../assets/prizesRight.png";
 
 const Card = ({ text }) => {
   return (
@@ -13,9 +15,19 @@ const Card = ({ text }) => {
 
 const Prizes = () => {
   return (
-    <section className="py-24 border-y border-white" id="prizes">
+    <section className="py-24 border-y border-white relative" id="prizes">
       <Heading text="Prizes" />
-      <div className="mx-auto w-3/5 flex mt-24 gap-24">
+      <img
+        src={prizesLeft}
+        alt=""
+        className="absolute -bottom-20 left-0 hidden md:block"
+      />
+      <img
+        src={prizesRight}
+        alt=""
+        className="absolute -bottom-24 right-0 hidden md:block"
+      />
+      <div className="mx-auto md:w-3/5 flex flex-wrap lg:flex-nowrap justify-center items-center mt-24 gap-24">
         <Card text="INR 2K+" />
         <Card text="INR 5K+" />
         <Card text="INR 10K+" />

@@ -2,6 +2,8 @@ import Heading from "./Heading";
 import { useEffect, useRef, useState } from "react";
 import orange from "../assets/orange.svg";
 import white from "../assets/white.svg";
+import timeline1 from "../assets/timeline1.png";
+import timeline2 from "../assets/timeline2.png";
 
 const steps = [
   {
@@ -69,8 +71,18 @@ const Timeline = () => {
   }, []);
 
   return (
-    <section className="py-24 text-white" id="timeline">
+    <section className="py-24 text-white relative" id="timeline">
       <Heading text="Timeline" />
+      <img
+        src={timeline1}
+        alt=""
+        className="absolute top-40 left-0 hidden md:block"
+      />
+      <img
+        src={timeline2}
+        alt=""
+        className="absolute bottom-40 right-0 hidden md:block"
+      />
       <div
         ref={divRef}
         style={{

@@ -8,7 +8,9 @@ import aboutRectangle3 from "../assets/aboutRectangle3.png";
 
 const Card = ({ title, desc }) => {
   return (
-    <div className={`z-10 bg-secondary p-4 text-white w-1/3 flex items-center`}>
+    <div
+      className={`z-10 bg-secondary p-4 text-white mx-auto md:w-1/3 flex items-center`}
+    >
       <div className="font-bold text-[32px] leading-[48px]">{title}</div>
       <div className="w-full uppercase text-center font-bold text-[16px] leading-[24px]">
         {desc}
@@ -20,11 +22,15 @@ const Card = ({ title, desc }) => {
 const About = () => {
   return (
     <section className="relative" id="about">
-      <img src={aboutRectangle1} alt="" className="absolute -top-44 left-0" />
+      <img
+        src={aboutRectangle1}
+        alt=""
+        className="absolute -top-44 left-0 hidden md:block"
+      />
       <div className="py-24 border-y border-white space-y-24">
         <Heading text="About Us" />
-        <div className="flex items-center w-4/5 mx-auto justify-between">
-          <div className="text-[#FAF3DD] font-normal text-base w-2/5">
+        <div className="flex flex-wrap lg:flex-nowrap items-center w-4/5 mx-auto justify-between">
+          <div className="text-[#FAF3DD] font-normal text-base md:w-2/5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo
             quam, mollis iaculis sapien et, lobortis dictum lectus. Suspendisse
             in orci dui. Nunc scelerisque, ex id efficitur imperdiet, felis
@@ -38,7 +44,7 @@ const About = () => {
           </div>
           <img src={about} alt="about.png" />
         </div>
-        <div className="mx-auto w-4/5 flex mt-24 gap-24">
+        <div className="mx-auto w-4/5 flex flex-wrap lg:flex-nowrap mt-24 gap-24">
           <Card title="200+" desc="participants" />
           <Card title="30+" desc="teams" />
           <Card title="5+" desc="colleges" />
@@ -50,12 +56,12 @@ const About = () => {
       <img
         src={aboutRectangle2}
         alt=""
-        className="absolute bottom-[12rem] left-0"
+        className="absolute bottom-[12rem] left-0 hidden md:block"
       />
       <img
         src={aboutRectangle3}
         alt=""
-        className="absolute bottom-36 right-0"
+        className="absolute bottom-36 right-0 hidden md:block"
       />
     </section>
   );
