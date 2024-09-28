@@ -6,7 +6,7 @@ import prizesRight from "../assets/prizesRight.png";
 const Card = ({ text }) => {
   return (
     <div
-      className={`rounded-[10px] bg-secondary text-center px-3 text-white w-1/3 h-60 flex items-center justify-center font-[900] text-[32px] leading-[48px] tracking-[10%]`}
+      className={`rounded-[10px] bg-secondary text-center px-3 text-white w-[90%] md:w-1/3 h-60 flex items-center justify-center font-[900] text-[32px] leading-[48px] tracking-[10%]`}
     >
       {text}
     </div>
