@@ -20,6 +20,10 @@ const Card = ({ title, desc }) => {
 };
 
 const About = () => {
+  const handleClick = ()=>{
+    window.open("http://surl.li/hsyhna", "_blank")
+  }
+
   return (
     <section className="relative" id="about">
       <img
@@ -28,29 +32,39 @@ const About = () => {
         className="absolute -top-44 left-0 hidden md:block"
       />
       <div className="py-24 border-y border-white space-y-24">
-        <Heading text="About Us" />
+        <Heading text="Details of the Event" />
         <div className="flex flex-wrap lg:flex-nowrap items-center w-4/5 mx-auto justify-between">
           <div className="text-[#FAF3DD] font-normal text-base md:w-2/5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo
-            quam, mollis iaculis sapien et, lobortis dictum lectus. Suspendisse
-            in orci dui. Nunc scelerisque, ex id efficitur imperdiet, felis
-            velit elementum eros, in elementum leo odio non lectus. Suspendisse
-            dictum felis sit amet mi consequat, nec convallis ipsum sagittis.
-            Duis vel magna a risus dictum molestie.
-            <br />
-            2023-2024
-            <br />
-            Spark-a-thon
+            <ul><li>Teams must present their projects using
+PowerPoint/Canva.</li>
+<li>Functional prototypes or proof-of-concept
+demonstrations are encouraged.</li><li>
+Presentations should cover the problem,
+solution, technical details, and market impact.</li><li>
+Time limit: 5-10 minutes, followed by a Q&A
+session with judges.</li></ul><br/>Judging Criteria:<ul><li>
+Creativity and Innovation</li><li>
+Technical Feasibility</li><li>
+Scalability and Market Potential</li><li>
+Presentation and Clarity</li><li>
+Problem-Solving Impact</li><li>
+One winning team per domain will be
+announced, receiving recognition, mentorship,
+and incubation opportunities.</li><li>
+Winning teams can further get a chance to
+incubate their projects into startups with
+ongoing support from mentors and industry
+experts.</li></ul>
           </div>
           <img src={about} alt="about.png" />
         </div>
         <div className="mx-auto w-4/5 flex flex-wrap lg:flex-nowrap mt-24 gap-24">
-          <Card title="200+" desc="participants" />
-          <Card title="30+" desc="teams" />
-          <Card title="5+" desc="colleges" />
+          <Card title="Entry Fee" desc="₹300" />
+          <Card title="Cash Prize" desc="₹10,000" />
+          <Card title="Venue" desc="Diploma Hall" />
         </div>
         <div className="flex justify-center">
-          <Button text="Register Now" />
+          <Button text="Register Now" onClick={handleClick} />
         </div>
       </div>
       <img
