@@ -7,40 +7,29 @@ import timeline2 from "../assets/timeline2.png";
 
 const steps = [
   {
-    title: "Tailored Just for You",
+    title: "Registration desk",
     description: [
-      "Our AI analyzes your profile and the job you're targeting, creating a personalized interview experience that fits your specific goals and strengths.",
-    ],
+      "TIME: 11:00 AM - 11:45AM"],
   },
   {
-    title: "Choose Your Perfect Scenario",
+    title: "Inauguration",
     description: [
-      "Pick from a wide range of realistic interview scenarios that match your industry and job role, so you can practice exactly what you need.",
-    ],
+      "TIME: 12:00 Noon"],
   },
   {
-    title: "Adaptive Virtual Interviews",
+    title: "Evaluation & Exhibition",
     description: [
-      "Step into immersive interviews where AI-driven characters adapt to your responses in real-time, mimicking the pressure and dynamics of a real interview.",
-    ],
+      "TIME: 12:30 PM - 4:00 PM"],
   },
   {
-    title: "Get Instant, Personalized Feedback",
+    title: "Lunch",
     description: [
-      "Right after your session, receive detailed feedback on your communication, body language, and more, so you know exactly where to improve.",
-    ],
+      "TIME: 1:30 PM - 2:00 PM"],
   },
   {
-    title: "Track Your Progress with a Readiness Score",
+    title: "Valedictory",
     description: [
-      "See how you're improving with our Interview Readiness Score, which combines your technical skills and soft skills into one powerful number.",
-    ],
-  },
-  {
-    title: "Keep Getting Better",
-    description: [
-      "Use detailed insights and analytics to continuously refine your interview skills, ensuring you're always ready to impress.",
-    ],
+      "TIME: 4:30 PM - 5:00 PM"],
   },
 ];
 
