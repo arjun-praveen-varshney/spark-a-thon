@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const Card = ({ text, bgColor = "bg-secondary" }) => {
+const Card = ({ text, bgColor = "bg-secondary", desc="" }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleMouseEnter = () => {
@@ -15,7 +15,7 @@ const Card = ({ text, bgColor = "bg-secondary" }) => {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="h-60 w-[90%] mx-auto md:w-1/3 cursor-pointer relative"
+      className="min-h-60 w-[90%] mx-auto md:w-1/3 cursor-pointer relative"
       style={{ perspective: "1000px" }}
     >
       <motion.div
@@ -50,7 +50,7 @@ const Card = ({ text, bgColor = "bg-secondary" }) => {
             transform: "rotateY(180deg)",
           }}
         >
-          lorem ipsum dolor sit
+          {desc}
         </div>
       </motion.div>
     </div>
