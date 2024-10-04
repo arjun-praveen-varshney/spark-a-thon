@@ -3,6 +3,9 @@ import hero from "../assets/hero.png";
 import header1 from "../assets/header1.png";
 
 const Hero = () => {
+  const handleClick = ()=>{
+    window.open("http://surl.li/hsyhna", "_blank")
+  }
   return (
     <div
       className="flex flex-col py-16 gap-16 items-center text-white relative"
@@ -32,18 +35,28 @@ const Hero = () => {
         <img src={hero} alt="" />
         <div>
           <p className="max-w-xl mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo
-            quam, mollis iaculis sapien et, lobortis dictum lectus. Suspendisse
-            in orci dui. Nunc scelerisque, ex id efficitur imperdiet, felis
-            velit elementum eros, in elementum leo odio non lectus. Suspendisse
-            dictum felis sit amet mi consequat, nec convallis ipsum sagittis.
-            Duis vel magna a risus dictum molestie. <br />
-            2023-2024
+            Spark-A-Thon is a competition where teams
+develop innovative projects in distinguished
+domains to solve real-world problems.
+Projects are judged on creativity, technical
+feasibility, scalability, and market potential.
+Winners receive recognition and support to
+transform their ideas into viable products.
+Beyond the competition, winners have the
+opportunity to:
+Incubate their ideas into startups, with
+resources and mentorship to launch into the
+market.
+With continuous mentorship from industry experts,
+Spark-A-Thon helps refine and elevate concepts,
+making it the ultimate launchpad for
+entrepreneurial ventures. <br />
+            11:00am - 4:00pm
             <br />
-            Spark-a-thon
+            10th October, 2024
           </p>
           <div className="text-center md:text-left">
-            <Button text="Register Now" />
+            <Button text="Register Now" onClick={handleClick} />
           </div>
         </div>
       </div>
