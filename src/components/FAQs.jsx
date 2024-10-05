@@ -4,24 +4,29 @@ import Heading from "./Heading";
 const FAQs = () => {
   const faqs = [
     {
-      title: "FAQ1",
+      title: "What is E-Cell at FCRIT?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo quam, mollis iaculis sapien et, lobortis dictum lectus. Suspendisse in orci dui. Nunc scelerisque, ex id efficitu",
+        "E-Cell FCRIT is a non-profit student organization promoting entrepreneurship among students.",
     },
     {
-      title: "FAQ2",
+      title: "What is FCRIT-IIC?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo quam, mollis iaculis sapien et, lobortis dictum lectus. Suspendisse in orci dui. Nunc scelerisque, ex id efficitu",
+        "FCRIT-IIC, fosters local innovation and startup ecosystem, offering pre-incubation and incubation support through seminars, workshops, and boot-camps.",
     },
     {
-      title: "FAQ3",
+      title: "What can students benefit from Spark-A-Thon?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo quam, mollis iaculis sapien et, lobortis dictum lectus. Suspendisse in orci dui. Nunc scelerisque, ex id efficitu",
+        "Students can gain mentorship from industry experts, exposure to real-world challenges, and networking opportunities with professionals and judges. Winning teams will get a chance to turn their projects into startups, backed by mentors and industry experts like CIBA!",
     },
     {
-      title: "FAQ4",
+      title: "Is there an opportunity for incubation?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo quam, mollis iaculis sapien et, lobortis dictum lectus. Suspendisse in orci dui. Nunc scelerisque, ex id efficitu",
+        "Yes, selected projects will have the chance for incubation through CIBA (Centre for Incubation and Business Acceleration), helping turn ideas into startups.",
+    },
+    {
+      title: "Will participants interact with the judges?",
+      answer:
+        "Yes, there will be opportunities for teams to interact with judges for mentorship, feedback, and networking during the exhibition.",
     },
   ];
   return (

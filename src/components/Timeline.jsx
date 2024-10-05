@@ -8,28 +8,23 @@ import timeline2 from "../assets/timeline2.png";
 const steps = [
   {
     title: "Registration desk",
-    description: [
-      "TIME: 11:00 AM - 11:45AM"],
+    description: ["Time: 11:00 AM - 11:45 AM"],
   },
   {
     title: "Inauguration",
-    description: [
-      "TIME: 12:00 Noon"],
+    description: ["Time: 12:00 Noon"],
   },
   {
     title: "Evaluation & Exhibition",
-    description: [
-      "TIME: 12:30 PM - 4:00 PM"],
+    description: ["Time: 12:30 PM - 4:00 PM"],
   },
   {
     title: "Lunch",
-    description: [
-      "TIME: 1:30 PM - 2:00 PM"],
+    description: ["Time: 1:30 PM - 2:00 PM"],
   },
   {
     title: "Valedictory",
-    description: [
-      "TIME: 4:30 PM - 5:00 PM"],
+    description: ["Time: 4:30 PM - 5:00 PM"],
   },
 ];
 
@@ -123,7 +118,7 @@ const Timeline = () => {
                 display: "flex",
                 flexDirection: index % 2 === 0 ? "row-reverse" : "row",
                 alignItems: "center",
-                mb: 10,
+                mb: 40,
                 position: "relative",
                 width: "100%",
               }}
@@ -148,7 +143,7 @@ const Timeline = () => {
               <div
                 style={{
                   width: "100%",
-                  textAlign: "left",
+                  textAlign: index % 2 === 0 ? "left" : "right",
                   display: "flex",
                   flexDirection: index % 2 === 0 ? "row" : "row-reverse",
                   alignItems: "center",
@@ -159,8 +154,8 @@ const Timeline = () => {
                 <div
                   style={{
                     position: "relative",
-                    marginBottom: index % 2 !== 0 ? "0" : "10px",
-                    marginTop: index % 2 === 0 ? "0" : "10px",
+                    marginBottom: index % 2 !== 0 ? "20px" : "40px",
+                    marginTop: index % 2 === 0 ? "20px" : "40px",
                     transform:
                       index % 2 !== 0 ? "rotate(180deg)" : "rotate(0deg)",
                     width: "15%",
@@ -181,7 +176,7 @@ const Timeline = () => {
                   )}
                 </div>
                 <div style={{ width: "35%" }}>
-                  <div>{step.title}</div>
+                  <div className="font-bold">{step.title}</div>
                   {step.description.map((desc, i) => (
                     <div key={i}>{desc}</div>
                   ))}
