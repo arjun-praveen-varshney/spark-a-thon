@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import iic from "../assets/iic.png";
+import iic from "../assets/iic_logo.png";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 
@@ -10,10 +10,10 @@ const Navbar = () => {
 
   const list = [
     { name: "Home", to: "home" },
-    { name: "Domains", to: "domains" },
     { name: "About Us", to: "about" },
-    { name: "Prizes", to: "prizes" },
     { name: "Timeline", to: "timeline" },
+    { name: "Domains", to: "domains" },
+    // { name: "Prizes", to: "prizes" },
     { name: "FAQs", to: "faqs" },
   ];
 
