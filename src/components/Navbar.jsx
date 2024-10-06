@@ -34,7 +34,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <img src={iic} alt="iic" className="hidden md:block" />
+      <img src={iic} alt="iic" className="hidden md:block w-[100px] h-[44px]" />
       <div className="md:hidden flex items-center">
         <img src={iic} alt="iic" className="h-8 w-auto mr-4" />
         <button
