@@ -55,7 +55,7 @@ const Card = ({ text, bgColor = "bg-secondary", desc = [] }) => {
             transform: "rotateY(180deg)",
           }}
         >
-          <ul className="list-disc lg:pl-6 lg:py-6 lg:space-y-5 text-left">
+          <ul className="list-disc pl-4 lg:pl-6 lg:py-6 space-y-2 lg:space-y-5 text-left">
             {desc.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

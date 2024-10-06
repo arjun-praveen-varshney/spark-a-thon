@@ -8,7 +8,7 @@ const FAQItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-700">
+    <div>
       <button
         className="flex justify-between items-center w-full py-4 px-6 text-left focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
@@ -81,7 +81,7 @@ Key Functions of IIC include:
         <div
           data-aos="zoom-in"
           key={index}
-          className={`w-3/5 ${
+          className={`w-[90%] md:w-3/5 ${
             index === 0 && "mt-20"
           } mx-auto my-4 bg-[#001f2d]`}
         >

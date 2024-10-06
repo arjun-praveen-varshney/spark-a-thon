@@ -28,7 +28,7 @@ const Domains = () => {
         className="absolute right-0 bottom-0 hidden md:block"
       />
       <div
-        className="mx-auto md:w-[90%] grid grid-cols-1 md:grid-cols-3 mt-24 gap-20"
+        className="mx-auto w-[90%] grid grid-cols-1 md:grid-cols-3 mt-24 gap-20"
         data-aos="zoom-in"
       >
         <Card
@@ -60,7 +60,7 @@ const Domains = () => {
         />
       </div>
       <div
-        className="mx-auto md:w-3/5 grid grid-cols-1 md:grid-cols-2 mt-20 gap-20"
+        className="mx-auto w-[90%] md:w-3/5 grid grid-cols-1 md:grid-cols-2 mt-20 gap-20"
         data-aos="zoom-in"
       >
         <Card
