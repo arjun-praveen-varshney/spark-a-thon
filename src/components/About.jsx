@@ -14,7 +14,7 @@ const Card = ({ title, desc }) => {
   // }, []);
   return (
     <div
-      className={`z-10 bg-secondary text-white mx-auto md:w-1/3 flex justify-between items-center p-4 md:space-x-0 space-x-4`}
+      className={`z-10 bg-secondary text-white mx-auto flex justify-between items-center p-4 space-x-8`}
     >
       <div className="font-semibold text-base">{title}</div>
       <div className="uppercase text-right font-bold md:text-[24px] md:leading-[40px]">
@@ -83,11 +83,11 @@ const About = () => {
           <img src={about} alt="about.png" data-aos="zoom-in" />
         </div>
         <div
-          className="mx-auto w-4/5 flex flex-wrap lg:flex-nowrap mt-24 gap-24"
+          className="mx-auto w-4/5 flex flex-wrap lg:flex-nowrap mt-24 gap-16"
           // data-aos="fade-up"
         >
           <Card title="Entry Fee" desc="₹300" />
-          <Card title="Prize Pool" desc="₹10,000" />
+          <Card title="Prize Pool" desc="₹10,000 and exciting goodies" />
           <Card title="Venue" desc="Diploma Hall" />
         </div>
         <div className="flex justify-center" data-aos="zoom-in">
