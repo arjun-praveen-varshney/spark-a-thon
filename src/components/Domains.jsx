@@ -2,6 +2,11 @@ import Heading from "./Heading";
 import Card from "./Card";
 import domains1 from "../assets/domains1.png";
 import domains2 from "../assets/domains2.png";
+import iotSmartSys from "../assets/iotSmartSys.jpeg";
+import aiMLCyberSecurity from "../assets/aiMLCyberSecurity.webp";
+import openInnovations from "../assets/openInnovations.jpg";
+import renewableEnergy from "../assets/renewableEnergy.jpg";
+import robotics from "../assets/robotics.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -40,6 +45,7 @@ const Domains = () => {
             "Participants are encouraged to build solutions that are both technically innovative and have strong business potential.",
           ]}
           bgColor="bg-[#FF5055]"
+          img={aiMLCyberSecurity}
         />
         <Card
           text="POWER SYSTEMS / RENEWABLE ENERGY SYSTEMS / SMART GRID"
@@ -49,6 +55,7 @@ const Domains = () => {
             "The goal is to develop scalable ideas that can become marketable products or businesses.",
           ]}
           bgColor="bg-[#FAF3DD]"
+          img={renewableEnergy}
         />
         <Card
           text="ROBOTICS / DRONE & FIXED WING"
@@ -57,6 +64,7 @@ const Domains = () => {
             "Projects can include AI features for tasks like object detection, path planning, or healthcare assistance. Participants are encouraged to create scalable, product-ready solutions that showcase technical skills and entrepreneurial potential.",
           ]}
           bgColor="bg-[#C80774]"
+          img={robotics}
         />
       </div>
       <div
@@ -70,6 +78,7 @@ const Domains = () => {
             "Examples include smart home devices, health monitors, and automated irrigation systems.",
             "Participants are encouraged to design innovative, scalable solutions that highlight their technical expertise and entrepreneurial spirit.",
           ]}
+          img={iotSmartSys}
         />
         <Card
           text="OPEN INNOVATIONS"
@@ -77,6 +86,7 @@ const Domains = () => {
             "This domain is open to any innovative project that doesn't fit into the other categories. Participants can explore new ideas, technologies, or applications that have the potential to make a significant impact.",
           ]}
           bgColor="bg-green-500"
+          img={openInnovations}
         />
       </div>
     </section>

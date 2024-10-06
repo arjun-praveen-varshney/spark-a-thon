@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const Card = ({ text, bgColor = "bg-secondary", desc = [] }) => {
+const Card = ({ img, text, bgColor = "bg-secondary", desc = [] }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleMouseEnter = () => {
@@ -33,7 +33,7 @@ const Card = ({ text, bgColor = "bg-secondary", desc = [] }) => {
         <div
           className={`rounded-[10px] absolute ${bgColor} text-center px-3 ${
             bgColor === "bg-[#FAF3DD]" ? "text-slate-600" : "text-white"
-          } flex items-center justify-center font-semibold md:text-[28px] md:leading-[44px] h-full w-full`}
+          } flex flex-col items-center justify-between py-6 font-semibold md:text-[28px] md:leading-[44px] h-full w-full`}
           style={{
             textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             backgroundOrigin: "border-box",
@@ -41,6 +41,11 @@ const Card = ({ text, bgColor = "bg-secondary", desc = [] }) => {
             backfaceVisibility: "hidden",
           }}
         >
+          <img
+            src={img}
+            alt=""
+            className="md:w-[371.45px] w-full md:h-[247.76px]"
+          />
           {text}
         </div>
         <div
