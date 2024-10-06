@@ -16,7 +16,7 @@ const Card = ({ text, bgColor = "bg-secondary", desc = [] }) => {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="h-96 w-[90%] mx-auto md:w-1/3 cursor-pointer relative"
+      className="h-[28rem] mx-auto w-full cursor-pointer relative"
       style={{ perspective: "1000px" }}
     >
       <motion.div
@@ -55,7 +55,7 @@ const Card = ({ text, bgColor = "bg-secondary", desc = [] }) => {
             transform: "rotateY(180deg)",
           }}
         >
-          <ul className="list-disc pl-6 text-left">
+          <ul className="list-disc lg:pl-6 lg:py-6 lg:space-y-5 text-left">
             {desc.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

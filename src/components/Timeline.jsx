@@ -5,6 +5,7 @@ import white from "../assets/white.svg";
 import timeline1 from "../assets/timeline1.png";
 import timeline2 from "../assets/timeline2.png";
 
+
 const steps = [
   {
     title: "Registration desk",
@@ -29,6 +30,7 @@ const steps = [
 ];
 
 const Timeline = () => {
+ 
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const divRef = useRef(null);
 

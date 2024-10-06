@@ -1,10 +1,16 @@
 import Button from "./Button";
 import hero from "../assets/hero.png";
 import header1 from "../assets/header1.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const handleClick = () => {
-    window.open("http://surl.li/hsyhna", "_blank");
+    window.open("https://forms.gle/TosVB1eupJW9rCoU6", "_blank");
   };
   return (
     <div
@@ -16,7 +22,7 @@ const Hero = () => {
         src={header1}
         alt=""
       />
-      <div>
+      <div data-aos="zoom-in">
         <h1
           className="font-extrabold italic text-[36px] md:text-[72px] md:leading-[108px] tracking-[3%]"
           style={{ textShadow: "0px 4px 4px black" }}
@@ -32,9 +38,9 @@ const Hero = () => {
         </h2>
       </div>
       <div className="flex flex-wrap lg:flex-nowrap items-center justify-between mx-auto w-3/4">
-        <img src={hero} alt="" />
+        <img src={hero} alt="" data-aos="fade-right" />
         <div>
-          <p className="max-w-xl mb-8">
+          <p className="max-w-xl mb-8" data-aos="fade-left">
             Spark-A-Thon is a competition where teams develop innovative
             projects in distinguished domains to solve real-world problems.
             Projects are judged on creativity, technical feasibility,
@@ -51,7 +57,7 @@ const Hero = () => {
             <span className="text-lg">Date: 10th October, 2024</span>
           </p>
           <br />
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left" data-aos="fade-up">
             <Button text="Register Now" onClick={handleClick} />
           </div>
         </div>

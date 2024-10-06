@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/HeroSection";
-import Prizes from "./components/Prizes";
+// import Prizes from "./components/Prizes";
 import Domains from "./components/Domains";
 import About from "./components/About";
 import Timeline from "./components/Timeline";
@@ -16,7 +16,7 @@ const App = () => {
       <About />
       <Timeline />
       <Domains />
-      <Prizes />
+      {/* <Prizes /> */}
       <FAQs />
       <Footer />
     </div>

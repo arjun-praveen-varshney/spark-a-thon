@@ -1,12 +1,21 @@
-import React from "react";
 import Heading from "./Heading";
 import Card from "./Card";
 import domains1 from "../assets/domains1.png";
 import domains2 from "../assets/domains2.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Domains = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <section className="py-24 border-y border-white relative" id="domains">
+    <section
+      className="py-24 border-y border-white relative"
+      id="domains"
+      data-aos="zoom-in"
+    >
       <Heading text="Domains" />
       <img
         src={domains1}
@@ -18,7 +27,10 @@ const Domains = () => {
         alt=""
         className="absolute right-0 bottom-0 hidden md:block"
       />
-      <div className="mx-auto md:w-2/3 flex flex-wrap justify-center items-center mt-24 gap-20">
+      <div
+        className="mx-auto md:w-[90%] grid grid-cols-1 md:grid-cols-3 mt-24 gap-20"
+        data-aos="zoom-in"
+      >
         <Card
           text="AI/ML / CYBERSECURITY"
           desc={[
@@ -46,6 +58,11 @@ const Domains = () => {
           ]}
           bgColor="bg-[#C80774]"
         />
+      </div>
+      <div
+        className="mx-auto md:w-3/5 grid grid-cols-1 md:grid-cols-2 mt-20 gap-20"
+        data-aos="zoom-in"
+      >
         <Card
           text="SMART SYSTEMS / EMBEDDED SYSTEMS / IOT"
           desc={[

@@ -1,11 +1,19 @@
 import Heading from "./Heading";
 import prizesLeft from "../assets/prizesLeft.png";
 import prizesRight from "../assets/prizesRight.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 const Card = ({ text, color = "", borderColor = "" }) => {
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[]);
   return (
     <div
       className={`rounded-[10px] bg-transparent ${borderColor} border-4 text-center px-3 text-white w-[90%] md:w-1/3 h-96 flex flex-col items-center justify-center gap-8 font-bold md:text-[24px] md:leading-[40px]`}
+      data-aos="zoom-in"
     >
       <span>{text}</span>
       <span className={color}>INR 2K and Exciting Goodies</span>
