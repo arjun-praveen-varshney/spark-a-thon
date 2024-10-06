@@ -41,11 +41,7 @@ const Card = ({ img, text, bgColor = "bg-secondary", desc = [] }) => {
             backfaceVisibility: "hidden",
           }}
         >
-          <img
-            src={img}
-            alt=""
-            className="md:w-[371.45px] w-full md:h-[247.76px]"
-          />
+          <img src={img} alt="" className="md:w-[371.45px] md:h-[247.76px]" />
           {text}
         </div>
         <div
