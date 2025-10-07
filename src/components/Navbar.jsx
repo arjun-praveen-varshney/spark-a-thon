@@ -9,11 +9,10 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const list = [
-    { name: "Home", to: "home" },
+    { name: "Home", to: "home" }, // You'll need an id="home" on your HeroSection for this to work
     { name: "About Us", to: "about" },
     { name: "Timeline", to: "timeline" },
     { name: "Domains", to: "domains" },
-    // { name: "Prizes", to: "prizes" },
     { name: "FAQs", to: "faqs" },
   ];
 

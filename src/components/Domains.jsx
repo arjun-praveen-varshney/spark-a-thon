@@ -13,29 +13,16 @@ import { useEffect } from "react";
 
 const Domains = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000, once: true });
   }, []);
+
   return (
-    <section
-      className="py-24 border-y border-white relative"
-      id="domains"
-      data-aos="zoom-in"
-    >
+    <section className="py-24 border-y border-white relative" id="domains">
       <Heading text="Domains" />
-      <img
-        src={domains1}
-        alt=""
-        className="absolute left-0 top-20 hidden md:block"
-      />
-      <img
-        src={domains2}
-        alt=""
-        className="absolute right-0 bottom-0 hidden md:block"
-      />
-      <div
-        className="mx-auto w-[90%] grid grid-cols-1 md:grid-cols-3 mt-24 gap-20"
-        data-aos="zoom-in"
-      >
+      <img src={domains1} alt="" className="absolute left-0 top-20 hidden md:block z-0" />
+      <img src={domains2} alt="" className="absolute right-0 bottom-0 hidden md:block z-0" />
+      
+      <div className="mx-auto w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-24 gap-16" data-aos="zoom-in">
         <Card
           text="AI/ML / CYBERSECURITY"
           desc={[
@@ -66,11 +53,6 @@ const Domains = () => {
           bgColor="bg-[#C80774]"
           img={robotics}
         />
-      </div>
-      <div
-        className="mx-auto w-[90%] md:w-3/5 grid grid-cols-1 md:grid-cols-2 mt-20 gap-20"
-        data-aos="zoom-in"
-      >
         <Card
           text="SMART SYSTEMS / EMBEDDED SYSTEMS / IOT"
           desc={[

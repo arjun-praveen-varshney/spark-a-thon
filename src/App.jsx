@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Hero from "./components/HeroSection";
-// import Prizes from "./components/Prizes";
+import HeroSection from "./components/HeroSection";
 import Domains from "./components/Domains";
 import About from "./components/About";
 import Timeline from "./components/Timeline";
@@ -12,11 +11,10 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <HeroSection />
       <About />
       <Timeline />
       <Domains />
-      {/* <Prizes /> */}
       <FAQs />
       <Footer />
     </div>
