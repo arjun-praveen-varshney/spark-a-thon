@@ -57,7 +57,7 @@ const About = () => {
         </div>
         <div className="mx-auto w-4/5 flex flex-wrap lg:flex-nowrap mt-24 gap-8">
           <Card title="Entry Fee" desc="₹300(group of 4)" />
-          <Card title="Extra Member" desc="₹50 for an extra member  (Min 6 participants)" />
+          <Card title="Extra Member" desc="₹50 for an extra member  (Max 6 participants)" />
           <Card title="Prize Pool" desc="₹15,000 and exciting goodies" />
           <Card title="Venue" desc="Diploma Hall" />
         </div>
