@@ -5,7 +5,7 @@ import domains2 from "../assets/domains2.png";
 import iotSmartSys from "../assets/iotSmartSys.jpeg";
 import aiMLCyberSecurity from "../assets/aiMLCyberSecurity.webp";
 import openInnovations from "../assets/openInnovations.jpg";
-import renewableEnergy from "../assets/renewableEnergy.jpg";
+import renewableEnergy from "../assets/renewableEnergy1.jpg";
 import robotics from "../assets/robotics.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
