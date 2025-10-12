@@ -5,7 +5,7 @@ import Heading from "./Heading";
 const timelineEvents = [
   { title: "Registration ", time: "9:00 AM - 9:45 AM" },
   { title: "Inauguration", time: "10:00 AM - 10:30 AM" },
-  { title: "Evaluation & Exhibition", time: "10:30 AM - 12:30 PM" },
+  { title: "Evaluation & Exhibition", time: "10:30 AM - 3:00 PM" },
   { title: "Lunch", time: "12:30 PM - 1:00 PM" },
   { title: "Valedictory", time: "3:30 PM - 4:00 PM" },
 ];
